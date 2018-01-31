@@ -9,9 +9,14 @@ namespace Fisher.Bookstore.Controllers
 {
     public class BooksController : Controller
     {
+        public IActionResult Index()
+        {
+            return View();
+        }
+
         public IActionResult New()
         {
-            return Content("hello world");
+            return View();
         }
 
     }
